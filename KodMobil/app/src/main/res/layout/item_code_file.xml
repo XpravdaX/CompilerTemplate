@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="120dp"
+    android:layout_height="160dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Логотип языка -->
+        <ImageView
+            android:id="@+id/languageIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Название файла -->
+        <TextView
+            android:id="@+id/fileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAlignment="center"
+            android:text="Название файла"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Формат файла -->
+        <TextView
+            android:id="@+id/fileFormat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=".py"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

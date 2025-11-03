@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+    <!-- Контейнер для фрагментов -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="76dp"
+        tools:background="@drawable/gradient_background"
+        tools:ignore="MergeRootFrame" />
+
+    <!-- Навигационная панель -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="12dp"
+        app:strokeWidth="0.5dp"
+        app:strokeColor="@color/nav_border"
+        app:cardBackgroundColor="@color/nav_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+
+            <!-- Кнопка Код -->
+            <LinearLayout
+                android:id="@+id/nav_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_code"
+                    android:tint="@color/nav_icon_active"/>
+
+                <TextView
+                    android:id="@+id/nav_code_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Код"
+                    android:textColor="@color/nav_text_active"
+                    android:textSize="11sp"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+            <!-- Кнопка Профиль -->
+            <LinearLayout
+                android:id="@+id/nav_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_profile"
+                    android:tint="@color/nav_icon_inactive"/>
+
+                <TextView
+                    android:id="@+id/nav_profile_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Профиль"
+                    android:textColor="@color/nav_text_inactive"
+                    android:textSize="11sp"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

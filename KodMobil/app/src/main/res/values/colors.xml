@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Базовые цвета -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="console_background">#FF1E1E1E</color>
+    <color name="console_text">#FF00FF00</color>
+    <color name="asdf">#1f202f</color>
+
+    <!-- Градиентный фон (темный серый -> очень темный серый) -->
+    <color name="gradient_start">#FF121214</color>
+    <color name="gradient_end">#FF121214</color>
+
+    <!-- Навигационная панель -->
+    <color name="nav_background">#FF202024</color>
+    <color name="nav_border">#FF333337</color>
+    <color name="nav_icon_active">#FF2780E6</color>
+    <color name="nav_icon_inactive">#FF8E8E93</color>
+    <color name="nav_text_active">#FF2780E6</color>
+    <color name="nav_text_inactive">#FF8E8E93</color>
+
+    <!-- Фон редактора кода -->
+    <color name="code_background">#FF121214</color>
+
+    <!-- Цвета текста -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFC7C7CC</color>
+    <color name="text_hint">#FF8E8E93</color>
+
+    <!-- Акцентные цвета для Python синтаксиса с новым акцентом -->
+    <color name="python_keyword">#FF2780E6</color> <!-- Яркий синий -->
+    <color name="python_function">#FF30D158</color> <!-- Зеленый -->
+    <color name="python_string">#FFFFD60A</color> <!-- Желтый -->
+    <color name="python_number">#FFFF9F0A</color> <!-- Оранжевый -->
+    <color name="python_comment">#FF8E8E93</color> <!-- Серый -->
+    <color name="python_operator">#FFBF5AF2</color> <!-- Фиолетовый -->
+
+    <!-- Дополнительные цвета UI -->
+    <color name="card_background">#CC202024</color>
+    <color name="accent_color">#FF2780E6</color> <!-- Яркий синий -->
+    <color name="error_color">#FFFF453A</color> <!-- Красный -->
+    <color name="success_color">#FF30D158</color> <!-- Зеленый -->
+</resources>
